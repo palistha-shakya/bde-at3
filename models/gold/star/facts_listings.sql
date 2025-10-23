@@ -2,7 +2,7 @@
     config(
         materialized='table',
         unique_key='listing_id',
-        alias='fact_listings'
+        alias='facts_listings'
     ) 
 }}
 

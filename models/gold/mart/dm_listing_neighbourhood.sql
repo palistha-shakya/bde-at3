@@ -16,7 +16,7 @@ with listing_data as (
         host_is_superhost,
         has_availability,
         30 - availability_30 as number_of_stays
-    from {{ ref('fact_listings') }}
+    from {{ ref('facts_listings') }}
 ),
 
 agg_metrics as (

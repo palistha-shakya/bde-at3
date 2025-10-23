@@ -13,7 +13,7 @@ with revenue_data as (
         price,
         (30 - availability_30) as number_of_stays,
         (price * (30 - availability_30)) as estimated_revenue
-    from {{ ref('fact_listings') }}
+    from {{ ref('facts_listings') }}
     where has_availability = 't'
 ),
 agg_metrics as (
